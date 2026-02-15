@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 420px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+  color: #ff4d6d;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px 25px;
+  background: #ff4d6d;
+  color: #fff;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+.next {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.reasons {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.reasons li {
+  margin: 8px 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  overflow: hidden;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 420px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.tenor-gif-embed {
+  max-width: 220px;
+  margin: 0 auto 15px;
+}
+
+h1 {
+  color: #ff4d6d;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn a {
+  text-decoration: none;
+  padding: 10px 25px;
+  background: #ff4d6d;
+  color: #fff;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.btn a:hover {
+  transform: scale(1.1);
+}
+
+/* Floating Hearts */
+.hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.heart {
+  position: absolute;
+  bottom: -20px;
+  font-size: 20px;
+  animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.valentine-gif {
+  width: 300px;
+  max-width: 100%;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+/* Love Page Extra Styling */
+.love-page {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.glow-text {
+  color: #ff2f6d;
+  text-shadow: 0 0 10px rgba(255, 77, 109, 0.7),
+               0 0 20px rgba(255, 77, 109, 0.5);
+}
+
+.love-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Button Pulse Animation */
+.pulse {
+  animation: pulse 1.5s infinite;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 77, 109, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 15px rgba(255, 77, 109, 0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* Reasons Page */
+.reasons-page {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fancy Reasons List */
+.fancy-reasons {
+  margin: 25px 0;
+  padding: 0;
+}
+
+.fancy-reasons li {
+  list-style: none;
+  background: linear-gradient(135deg, #fff0f5, #ffe6ee);
+  margin: 12px 0;
+  padding: 14px 18px;
+  border-radius: 14px;
+  font-size: 15px;
+  color: #ff2f6d;
+  box-shadow: 0 8px 20px rgba(255, 77, 109, 0.25);
+  animation: slideUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+/* Staggered animation */
+.fancy-reasons li:nth-child(1) { animation-delay: 0.2s; }
+.fancy-reasons li:nth-child(2) { animation-delay: 0.4s; }
+.fancy-reasons li:nth-child(3) { animation-delay: 0.6s; }
+.fancy-reasons li:nth-child(4) { animation-delay: 0.8s; }
+.fancy-reasons li:nth-child(5) { animation-delay: 1s; }
+
+/* Hover effect */
+.fancy-reasons li:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ffdde5, #ffc2d1);
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Promise Page */
+.promise-page {
+  animation: fadeIn 1.6s ease-in-out;
+}
+
+/* Promise GIF */
+.promise-gif {
+  width: 200px;
+  max-width: 100%;
+  margin-bottom: 15px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(255, 77, 109, 0.35);
+  animation: floatGif 3s ease-in-out infinite;
+}
+
+/* Promise Text */
+.promise-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+
+/* Final Page */
+.final-page {
+  animation: fadeIn 1.6s ease-in-out;
+}
+
+.final-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* 3D Rotating Gallery */
+.gallery-3d {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  margin: 30px auto;
+  transform-style: preserve-3d;
+  animation: rotateGallery 20s linear infinite;
+}
+
+.gallery-3d span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform: rotateY(calc(var(--i) * 60deg)) translateZ(320px);
+}
+
+.gallery-3d img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(255, 77, 109, 0.45);
+}
+
+/* Rotation animation */
+@keyframes rotateGallery {
+  from {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+/* Final Love Text */
+.love-final {
+  margin-top: 20px;
+  color: #ff2f6d;
+  font-size: 22px;
+  text-shadow: 0 0 12px rgba(255, 77, 109, 0.8);
+}
+
+/* Reuse existing glow + pulse */
+/* Music Button */
+.music-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #ff4d6d;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+  box-shadow: 0 8px 20px rgba(255, 77, 109, 0.5);
+}
+
+.music-btn:hover {
+  transform: scale(1.1);
+}
+
